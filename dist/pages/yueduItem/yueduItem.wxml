@@ -1,0 +1,12 @@
+<!--引入towxml模版入口文件，并使用模版-->
+<!-- <import src="../../towxml/entry.wxml" /> -->
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">月度读书小组</view>
+  <view wx:if="{{isLoading}}" class='weui-loading'></view>
+  <view class="weui-box__desc">
+     <!-- <template is="entry" data="{{...content.article}}"/>  -->
+     <template is="wxParse" data="{{wxParseData:article.nodes}}"/> 
+  </view>
+</view>

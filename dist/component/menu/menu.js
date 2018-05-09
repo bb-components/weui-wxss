@@ -1,33 +1,8 @@
+var config = require('../../utils/config.js').default;
+
 let _compData = {
   '__menu__.isHide': true,
-  '__menu__.grids': [{
-    name: '新闻',
-    url: '../new/new',
-  }, {
-    name: '音乐',
-    url: ''
-  }, {
-    name: '视频',
-    url: ''
-  }, {
-    name: '读书',
-    url: ''
-  }, {
-    name: '学习',
-    url: ''
-  }, {
-    name: '记事本',
-    url: ''
-  }, {
-    name: 'TodoList',
-    url: ''
-  }, {
-    name: '游戏',
-    url: ''
-  }, {
-    name: '动画',
-    url: ''
-  }]
+  '__menu__.grids': config.menuData,
 };
 
 let _compEvent = {

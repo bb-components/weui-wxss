@@ -8,17 +8,13 @@ Page({
   data: {
     list: [],
     isLoading: false,
-    index: -1,
   },
-  // 事件处理函数
-  bindViewTap: function (e) {
-    var index = e.currentTarget.dataset.id;
-    var i = index === this.data.index ? -1 : index;
-    this.setData({
-      index: i,
-    });
+  queryItemClick: function(e) {
+    var number = e.currentTarget.dataset.number;
+    wx.navigateTo({
+      url: '/pages/yueduItem/yueduItem?number=' + number,
+    })
   },
-  
   /**
    * 生命周期函数--监听页面加载
    */

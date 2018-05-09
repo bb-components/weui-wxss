@@ -2,4 +2,41 @@ export default {
   apiKey: 'YRAmfjRhq2AI5EYQpSKAdCQgJvXzkDdEKF5orvnJAFBtMNzdTziWuGO7J0ctGJta',
   kw: '技术',
   pageSize: 10,
+  menuData: [{
+    name: '新闻',
+    url: '/pages/new/new',
+  }, {
+    name: '音乐',
+    url: ''
+  }, {
+    name: '视频',
+    url: ''
+  }, {
+    name: '读书',
+    url: '/pages/yuedu/yuedu'
+  }, {
+    name: '学习',
+    url: ''
+  }, {
+    name: '记事本',
+    url: ''
+  }, {
+    name: 'TodoList',
+    url: ''
+  }, {
+    name: '游戏',
+    url: ''
+  }, {
+    name: '动画',
+    url: ''
+  }, {
+    name: '首页',
+    url: '/pages/index/index',
+  }, {
+    name: 'Logs',
+    url: '/pages/logs/logs'
+  }, {
+    name: 'WeUI',
+    url: '/index/index'
+  }]
 };

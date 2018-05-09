@@ -10,14 +10,20 @@ Page({
     list: [],
     isLoading: false,
     index: -1,
+
+    imgUrls: [],
+    // 轮播属性
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,  
   },
   // 事件处理函数
-  bindViewTap: function (e) {
-    var index = e.currentTarget.dataset.id;
-    var i = index === this.data.index ? -1 : index;
-    this.setData({
-      index: i,
-    });
+  queryItemClick: function (e) {
+    var title = e.currentTarget.dataset.title;
+    wx.navigateTo({
+      url: '/pages/newItem/newItem?title=' + title,
+    })
   },
   
   /**
@@ -32,7 +38,11 @@ Page({
     util.get({
       url,
       success: function(res) {
-        me.setData({ list: res.data, isLoading: false });
+        me.setData({
+          list: res.data.data,
+          isLoading: false,
+          imgUrls: res.data.data[0] ? res.data.data[0].imageUrls : [],
+        });
       },
     });
   },

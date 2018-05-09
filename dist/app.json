@@ -1,8 +1,10 @@
 {
   "pages":[
+    "pages/yuedu/yuedu",
+    "pages/yueduItem/yueduItem",
+    "pages/newItem/newItem",
     "pages/new/new",
     "pages/index/index",
-    "pages/yuedu/yuedu",
     "pages/logs/logs",
     "index/index",
     "index/button/button",
