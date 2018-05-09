@@ -15,11 +15,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    new app.MenuPannel();
+
     var me = this;
-    console.log(me);
     me.setData({ isLoading: true });
+    var number = this.options.number || 5;
     util.get({
-      url: 'https://api.github.com/repos/BETH-zhang/yuedu/issues/' + this.options.number,
+      url: 'https://api.github.com/repos/BETH-zhang/yuedu/issues/' + number,
       success: function(res) {
         var content = res.data;
         content.updated_at = util.dateFormat(content.updated_at, 'l');

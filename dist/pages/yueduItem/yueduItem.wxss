@@ -30,3 +30,21 @@
   border-radius: 5px;
   overflow: hidden;
 }
+
+.weui-article__h1,
+.weui-article__title {
+  margin: 10rpx 20rpx;
+}
+
+.weui-article_avatar {
+  display: inline-block;
+  float: left;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.weui-media-box__desc {
+  line-height: 35px;
+}
