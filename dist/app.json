@@ -1,48 +1,74 @@
 {
-  "pages": [
-    "example/index",
-
-    "example/button/button",
-    "example/list/list",
-    "example/input/input",
-    "example/slider/slider",
-    "example/uploader/uploader",
-
-    "example/article/article",
-    "example/badge/badge",
-    "example/flex/flex",
-    "example/footer/footer",
-    "example/gallery/gallery",
-    "example/grid/grid",
-    "example/icons/icons",
-    "example/loadmore/loadmore",
-    "example/panel/panel",
-    "example/preview/preview",
-    "example/progress/progress",
-
-    "example/actionsheet/actionsheet",
-    "example/dialog/dialog",
-    "example/msg/msg",
-    "example/msg/msg_success",
-    "example/msg/msg_fail",
-    "example/picker/picker",
-    "example/toast/toast",
-
-    "example/navbar/navbar",
-    "example/tabbar/tabbar",
-
-    "example/searchbar/searchbar"
+  "pages":[
+    "pages/new/new",
+    "pages/index/index",
+    "pages/yuedu/yuedu",
+    "pages/logs/logs",
+    "index/index",
+    "index/button/button",
+    "index/list/list",
+    "index/input/input",
+    "index/slider/slider",
+    "index/uploader/uploader",
+    "index/article/article",
+    "index/badge/badge",
+    "index/flex/flex",
+    "index/footer/footer",
+    "index/gallery/gallery",
+    "index/grid/grid",
+    "index/icons/icons",
+    "index/loadmore/loadmore",
+    "index/panel/panel",
+    "index/preview/preview",
+    "index/progress/progress",
+    "index/actionsheet/actionsheet",
+    "index/dialog/dialog",
+    "index/msg/msg",
+    "index/picker/picker",
+    "index/toast/toast",
+    "index/navbar/navbar",
+    "index/tabbar/tabbar",
+    "index/searchbar/searchbar"
   ],
-  "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "WeUI for 小程序",
-    "navigationBarBackgroundColor": "#f8f8f8",
-    "backgroundColor": "#f8f8f8"
+  "window":{
+    "backgroundTextStyle":"#f2f2f2",
+    "navigationBarBackgroundColor": "#03a9f4",
+    "navigationBarTitleText": "BB小程序",
+    "navigationBarTextStyle":"#ffffff"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#3a60a0",
+    "backgroundColor": "#03a9f4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon_index.png",
+        "selectedIconPath": "images/icon_index_hover.png"
+      },
+      {
+        "pagePath": "pages/yuedu/yuedu",
+        "text": "月度",
+        "iconPath": "images/icon_me.png",
+        "selectedIconPath": "images/icon_me_hover.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "images/icon_vip.png",
+        "selectedIconPath": "images/icon_vip_hover.png"
+      },
+      {
+        "pagePath": "index/index",
+        "text": "UI",
+        "iconPath": "images/icon_me.png",
+        "selectedIconPath": "images/icon_me_hover.png"
+      }
+    ]
   },
   "networkTimeout": {
     "request": 10000,
-    "connectSocket": 10000,
-    "uploadFile": 10000,
     "downloadFile": 10000
   },
   "debug": true

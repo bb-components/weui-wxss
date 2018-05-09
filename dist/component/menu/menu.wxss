@@ -1,0 +1,26 @@
+.menu-pannel .menu-icon {
+  position: absolute;
+  top: 40rpx;
+  right: 30rpx;
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 3;
+}
+
+.menu-pannel .page__bd {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 2;
+}
+
+.menu-pannel .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #03a9f4;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+  z-index: 1;
+}
