@@ -4,11 +4,17 @@
   position: relative;
   padding: 10rpx 0;
   width: 100%;
-  height: 450rpx;
+  height: 410rpx;
   background: url(//js.ibaotu.com/revision/img/icon_aubg.png) no-repeat;
-  margin-bottom: 40px;
   -webkit-background-size: 100% 100%;
   background-size: 100%;
+}
+
+.audio-title {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  font-weight: 30px;
 }
 
 .icont-rotate,

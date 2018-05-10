@@ -33,7 +33,6 @@ Page({
     new app.MenuPannel();
     
     var me = this;
-    console.log(me);
     me.setData({ isLoading: true });
     var url = 'http://api01.bitspaceman.com:8000/post/leifeng?apikey=' + config.apiKey + '&kw=' + config.kw + '&pageToken=' + config.pageSize;
     util.get({
