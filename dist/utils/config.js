@@ -10,7 +10,7 @@ export default {
     url: '/pages/music/music'
   }, {
     name: '视频',
-    url: ''
+    url: '/pages/video/video'
   }, {
     name: '读书',
     url: '/pages/yuedu/yuedu'

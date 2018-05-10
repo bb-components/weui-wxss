@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/video/video",
+    "pages/index/index",
     "pages/bbc/bbc",
     "pages/music/music",
-    "pages/index/index",
     "pages/yueduItem/yueduItem",
     "pages/yuedu/yuedu",
     "pages/newItem/newItem",

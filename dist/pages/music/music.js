@@ -1,7 +1,7 @@
 var util = require('../../utils/util.js');
 var config = require('../../utils/config.js').default;
 var listData = require('./data.js').default;
-console.log(listData);
+// console.log(listData);
 
 // audio.js
 const app = getApp();

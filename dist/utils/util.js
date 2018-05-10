@@ -10,6 +10,16 @@ export const dateFormat = function(log, rule) {
   return moment(log).format(rule || 'L');
 }
 
+export const getRandomColor = function () {
+  let rgb = []
+  for (let i = 0; i < 3; ++i) {
+    let color = Math.floor(Math.random() * 256).toString(16)
+    color = color.length == 1 ? '0' + color : color
+    rgb.push(color)
+  }
+  return '#' + rgb.join('')
+}
+
 /**
  * 时间秒数格式化
  * @param s 时间戳（单位：秒）
