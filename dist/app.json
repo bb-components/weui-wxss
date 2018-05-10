@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/bbc/bbc",
     "pages/music/music",
     "pages/index/index",
     "pages/yueduItem/yueduItem",
