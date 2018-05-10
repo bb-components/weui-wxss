@@ -1,10 +1,11 @@
 {
-  "pages":[
+  "pages": [
+    "pages/music/music",
+    "pages/index/index",
     "pages/yueduItem/yueduItem",
     "pages/yuedu/yuedu",
     "pages/newItem/newItem",
     "pages/new/new",
-    "pages/index/index",
     "pages/logs/logs",
     "index/index",
     "index/button/button",
@@ -32,11 +33,11 @@
     "index/tabbar/tabbar",
     "index/searchbar/searchbar"
   ],
-  "window":{
-    "backgroundTextStyle":"#f2f2f2",
+  "window": {
+    "backgroundTextStyle": "#f2f2f2",
     "navigationBarBackgroundColor": "#03a9f4",
     "navigationBarTitleText": "BB小程序",
-    "navigationBarTextStyle":"#ffffff"
+    "navigationBarTextStyle": "#ffffff"
   },
   "tabBar": {
     "color": "#ffffff",

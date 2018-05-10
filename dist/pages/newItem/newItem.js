@@ -21,12 +21,13 @@ Page({
     new app.MenuPannel();
 
     var me = this;
+    var index = this.options.index || 0;
     me.setData({ isLoading: true });
     var url = 'http://api01.bitspaceman.com:8000/post/leifeng?apikey=' + config.apiKey + '&kw=' + config.kw + '&pageToken=' + config.pageSize;
     util.get({
       url,
       success: function (res) {
-        const content = res.data.data[0] ? res.data.data[0] : {};
+        const content = res.data.data[index] ? res.data.data[index] : {};
         WxParse.wxParse('article', 'html', content.content, me, 5);
         me.setData({
           isLoading: false,

@@ -1,0 +1,47 @@
+<import src="../../component/menu/menu.wxml" />
+<template is="menuPannel" data="{{ ...__menu__ }}"/>
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd" bindtap='clickAudio'>bangumi音乐</view>
+  <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_text">
+        <view class="weui-media-box__title weui-media-box__title_in-text">Audio组件</view>
+        <view class="weui-media-box__desc">
+          <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop bindplay="funplay" bindpause="funpause" bindtimeupdate="funtimeupdate" bindended="funended" binderror="funerror"></audio>
+        </view>
+    </view>
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">{{name}}</view>
+      <view class="weui-media-box__desc music-item">
+        <view class="audio-src">
+          <!--音频列表-->
+          <view class="content-index clearfix js_clickbtn">
+            <view class="souse-img start-rotate">
+              <image src="//pic.ibaotu.com/00/61/05/21K888piCbFx.jpg!ffc96" alt="声波图" class="{{status===1 ? 'icont-rotate music-playing' : 'icont-rotate'}}"/>
+              <view class='iconz-rotate'></view>
+              <image class='icon-rotate'></image>
+            </view>
+            <!--音频box-->
+            <view class="audio-box clearfix">
+              <view bindtap='clickAudio'>
+                <image wx:if="{{status===0}}" class='music-play-btn' src="../../images/play.png" />
+                <image wx:else class="music-play-btn" src="../../images/pause.png" />
+              </view>
+              <span class="star-time">{{currentTime}}</span>
+              <view class="time-bar">
+                <image class="time-bar-img" src="//js.ibaotu.com/revision/img/max-shengbo.png" alt="声波图"/>
+                <view class='time-bar-bg' style="width: {{currentProgress}};"></view>
+              </view>
+              <span class="end-time">{{duration}}</span>
+              <!-- <audio class='hide' poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio> -->
+            </view> 
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- <button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button> -->

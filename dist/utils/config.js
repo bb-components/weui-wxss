@@ -7,7 +7,7 @@ export default {
     url: '/pages/new/new',
   }, {
     name: '音乐',
-    url: ''
+    url: '/pages/music/music'
   }, {
     name: '视频',
     url: ''

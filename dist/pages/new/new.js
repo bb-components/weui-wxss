@@ -20,9 +20,9 @@ Page({
   },
   // 事件处理函数
   queryItemClick: function (e) {
-    var title = e.currentTarget.dataset.title;
+    var index = e.currentTarget.dataset.index;
     wx.navigateTo({
-      url: '/pages/newItem/newItem?title=' + title,
+      url: '/pages/newItem/newItem?index=' + index,
     })
   },
   
@@ -33,6 +33,7 @@ Page({
     new app.MenuPannel();
     
     var me = this;
+    console.log(me);
     me.setData({ isLoading: true });
     var url = 'http://api01.bitspaceman.com:8000/post/leifeng?apikey=' + config.apiKey + '&kw=' + config.kw + '&pageToken=' + config.pageSize;
     util.get({
