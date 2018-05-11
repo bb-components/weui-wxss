@@ -12,11 +12,14 @@ export default {
     name: '视频',
     url: '/pages/video/video'
   }, {
+    name: '图片',
+    url: '/pages/picture/picture'
+  }, {
     name: '读书',
     url: '/pages/yuedu/yuedu'
   }, {
     name: '学习',
-    url: ''
+    url: '/pages/bbc/bbc'
   }, {
     name: '记事本',
     url: ''
@@ -38,5 +41,8 @@ export default {
   }, {
     name: 'WeUI',
     url: '/index/index'
+  }, {
+    name: 'WXApi',
+    url: '/index/api'
   }]
 };

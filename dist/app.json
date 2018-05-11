@@ -1,5 +1,9 @@
 {
   "pages": [
+    "index/api/camera/camera",
+    "index/api/canvas/canvas",
+    "index/api/api",
+    "index/index",
     "pages/picture/picture",
     "pages/video/video",
     "pages/index/index",
@@ -10,7 +14,6 @@
     "pages/newItem/newItem",
     "pages/new/new",
     "pages/logs/logs",
-    "index/index",
     "index/button/button",
     "index/list/list",
     "index/input/input",
