@@ -1,12 +1,13 @@
 {
   "pages": [
+    "pages/animation/animation",
+    "pages/index/index",
     "index/api/camera/camera",
     "index/api/canvas/canvas",
     "index/api/api",
     "index/index",
     "pages/picture/picture",
     "pages/video/video",
-    "pages/index/index",
     "pages/bbc/bbc",
     "pages/music/music",
     "pages/yueduItem/yueduItem",
