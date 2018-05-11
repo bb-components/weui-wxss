@@ -8,21 +8,44 @@
     <view class="weui-loading"></view>
     <view class="weui-loadmore__tips">正在加载</view>
   </view>
-  <view
-    class="weui-panel__bd"
-    wx:for="{{list}}"
-    wx:for-index="id"
-    wx:key="id"
-    wx:for-item="item"
-  >
-    <view data-index="{{id}}" class="weui-media-box" hover-class="weui-cell_active">
-      <image class='picture-img' src="{{item.fileOptions[0].url}}" />
-      <view>
-        <view class="weui-media-box__title">{{item.albumTitle}}</view>
-        <view class="weui-media-box__desc">{{item.posterScreenName}}</view>
-        <view class="weui-media-box__desc">{{item.publishDateStr}}</view>
-      </view>
+
+  <view wx:else class="content">
+    <view class="left">
+      <block wx:for="{{list}}" wx:key="">
+        <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+      </block>
     </view>
+    <view class="right">
+      <block wx:for="{{list}}" wx:key="">
+        <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+      </block>
+    </view>
+    <view class='clear'></view>
   </view>
-  <view class='clear'></view>
+
 </view>
+
+<!--  下面是一个模块 -->
+<template name="item">
+  <view class="weui-media-box">
+    <image class="item-img" src="{{fileOptions[0].url}}" mode="widthFix"></image>
+    <view>
+      <view class="weui-media-box__title">{{albumTitle}}</view>
+      <view class="weui-media-box__desc">{{posterScreenName}}</view>
+      <view class="weui-media-box__desc">{{publishDateStr}}</view>
+    </view>
+  <!-- <view class="item-title-box">
+      <navigator url="url" class="item-title">{{title}}</navigator> 
+      <image class="arrow" src="../../image/arrow.png"></image>  
+    </view>
+    <view class="name">
+      <image class="item-ava" src="{{avatar}}"></image>    
+      <text class="name-title">{{name}}</text>
+      <view class="heart_">
+        <image class="heart" src="../../image/heart.png"></image>
+        <text>{{heart_num}}</text>
+      </view>
+    </view> -->
+  </view>
+
+</template>
