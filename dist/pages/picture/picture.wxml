@@ -1,0 +1,28 @@
+<import src="../../component/menu/menu.wxml" />
+<template is="menuPannel" data="{{ ...__menu__ }}"/>
+<view class='picture'>
+  <view class='leifengwang'>
+    <image class='leifengwang-logo' src="../../images/tuitang/logo.png"></image>
+  </view>
+  <view wx:if="{{isLoading}}" class="weui-loadmore">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+  <view
+    class="weui-panel__bd"
+    wx:for="{{list}}"
+    wx:for-index="id"
+    wx:key="id"
+    wx:for-item="item"
+  >
+    <view data-index="{{id}}" class="weui-media-box" hover-class="weui-cell_active">
+      <image class='picture-img' src="{{item.fileOptions[0].url}}" />
+      <view>
+        <view class="weui-media-box__title">{{item.albumTitle}}</view>
+        <view class="weui-media-box__desc">{{item.posterScreenName}}</view>
+        <view class="weui-media-box__desc">{{item.publishDateStr}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='clear'></view>
+</view>
