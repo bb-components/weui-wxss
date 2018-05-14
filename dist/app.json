@@ -1,7 +1,11 @@
 {
   "pages": [
-    "pages/animation/animation",
     "pages/index/index",
+    "pages/courses/courses",
+    "pages/course/course",
+    "pages/mystudy/mystudy",
+    "pages/scroll/scroll",
+    "pages/animation/animation",
     "index/api/camera/camera",
     "index/api/canvas/canvas",
     "index/api/api",

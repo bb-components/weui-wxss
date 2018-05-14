@@ -3,6 +3,9 @@ export default {
   kw: '技术',
   pageSize: 10,
   menuData: [{
+    name: '云课堂',
+    url: '/pages/courses/courses',
+  }, {
     name: '新闻',
     url: '/pages/new/new',
   }, {
@@ -31,7 +34,10 @@ export default {
     url: ''
   }, {
     name: '动画',
-    url: '/pages/animation/'
+    url: '/pages/animation/animation'
+  }, {
+    name: 'scroll',
+    url: '/pages/scroll/scroll'
   }, {
     name: '首页',
     url: '/pages/index/index',
@@ -43,6 +49,6 @@ export default {
     url: '/index/index'
   }, {
     name: 'WXApi',
-    url: '/index/api'
+    url: '/index/api/api'
   }]
 };
