@@ -42,7 +42,8 @@
     "index/toast/toast",
     "index/navbar/navbar",
     "index/tabbar/tabbar",
-    "index/searchbar/searchbar"
+    "index/searchbar/searchbar",
+    "index/live-player/live-player"
   ],
   "window": {
     "backgroundTextStyle": "#f2f2f2",

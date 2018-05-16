@@ -58,3 +58,30 @@ export const get = function({ url, data, success }) {
     success,
   })
 }
+
+// 超过5个请求会出发小程序的限时
+export const queue = function(fns, count) {
+  return new Promise(function (resolve, reject) {
+    let a = fns.slice(0, count)
+    let b = fns.slice(count)
+    let l = fns.length
+    let runs = 0
+    if (fns.length == 0) return resolve()
+    for (let fn of a) {
+      fn().then(() => {
+        runs += 1
+        if (runs == l) return resolve()
+        let next = function () {
+          let fn = b.shift()
+          if (!fn) return
+          return fn().then(() => {
+            runs += 1
+            if (runs == l) return resolve()
+            return next()
+          }, reject)
+        }
+        return next()
+      }, reject)
+    }
+  })
+}

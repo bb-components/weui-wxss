@@ -5,50 +5,66 @@ export default {
   menuData: [{
     name: '云课堂',
     url: '/pages/courses/courses',
+    openType: 'navigate',
   }, {
     name: '新闻',
     url: '/pages/new/new',
+    openType: 'navigate',
   }, {
     name: '音乐',
-    url: '/pages/music/music'
+    url: '/pages/music/music',
+    openType: 'navigate',
   }, {
     name: '视频',
-    url: '/pages/video/video'
+    url: '/pages/video/video',
+    openType: 'navigate',
   }, {
     name: '图片',
-    url: '/pages/picture/picture'
+    url: '/pages/picture/picture',
+    openType: 'navigate',
   }, {
     name: '读书',
-    url: '/pages/yuedu/yuedu'
+    url: '/pages/yuedu/yuedu',
+    openType: 'switchTab',
   }, {
     name: 'BBC',
-    url: '/pages/bbc/bbc'
+    url: '/pages/bbc/bbc',
+    openType: 'navigate',
   }, {
     name: '记事本',
-    url: ''
+    url: '',
+    openType: 'navigate',
   }, {
     name: 'TodoList',
-    url: ''
+    url: '',
+    openType: 'navigate',
   }, {
     name: '游戏',
-    url: ''
+    url: '',
+    openType: 'navigate',
   }, {
     name: '动画',
-    url: '/pages/animation/animation'
+    url: '/pages/animation/animation',
+    openType: 'navigate',
   }, {
     name: 'scroll',
-    url: '/pages/scroll/scroll'
+    url: '/pages/scroll/scroll',
+    openType: 'navigate',
   }, {
     name: '首页',
     url: '/pages/index/index',
+    openType: 'switchTab',
   }, {
     name: 'Logs',
-    url: '/pages/logs/logs'
+    url: '/pages/logs/logs',
+    openType: 'switchTab'
   }, {
     name: 'WeUI',
-    url: '/index/index'
+    url: '/index/index',
+    openType: 'redirect'
   }, {
     name: 'WXApi',
-    url: '/index/api/api'
+    url: '/index/api/api',
+    openType: 'navigate',
   }]
 };
